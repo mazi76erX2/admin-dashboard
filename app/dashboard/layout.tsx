@@ -5,10 +5,10 @@ import Sidebar from "../ui/dashboard/sidebar/sidebar";
 const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <div className="flex">
-      <div className="bg-(--bgSoft) p-20">
+      <div className="bg-(--bgSoft) p-5 flex-1">
         <Sidebar />
       </div>
-      <div className="p-5">
+      <div className="p-5 flex-4">
         <Navbar />
         {children}
       </div>
